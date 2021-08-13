@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <title>Chat Bot</title>
+
+  <head>
+    <link rel="stylesheet" href="/static/styles/speech-input.css">
+    <link rel="stylesheet" href="/static/styles/demo.css">
+    <link rel = "stylesheet" href = "/static/styles/animate.css">
+    <link rel = "stylesheet" href = "/static/styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+      
+    </style>
+  </head>
+  <body style="background-color:#DCDCDC">
+
+
+
+    <div class = "container fadeInDown animated">
+    <img />
+    <center>
+      <h1>
+        <div>
+            Chatter
+          <h3>ABC shop</h3>
+        </div>
+      </h1>
+    </center>
+  </div>
+    <h3>
+
+    </h3>
+    <div class="box slideInUp animated"></div>
+    <div class="boxed slideInUp animated">
+      <div>
+        <div id="chatbox">
+
+          <br>
+
+          <p class="botText"><span>Hi! I am Chatter!️</span></p>
+            {% for y in reponse %}
+            {% set item_1 = reponse[loop.index-1] %}
+            {% set item_2 = req[loop.index-1] %} 
+            
+            <p class="userText"><span>{{item_2}}</span></p>
+            {% if req|length == loop.index %}
+            <p class="botText fadeInUp animated delay-1s"><span>{{item_1}}</span></p>
+            {% else %}
+            <p class="botText"><span>{{item_1}}</span></p>
+            {% endif %} 
+            {% endfor %}
+
+            
+          </p>
+        </div>
+        <center>
+        <div class = "container slideInUp animated">
+
+
+        <div id="userInput">
+          <form action="/result" method="POST">
+            <!-- <input id="textInput" type="text" name="msg" placeholder="Message" /> -->
+	
+            <input id="textInput" type="text" class="speech-input" placeholder="Message" name="msg">
+            <button class="material-icons" type="submit" style="font-size:30px;color:rgb(44, 44, 44)">send</button>
+            <!-- <button id="submit-btn" type="submit" class="btn btn-light submit-btn">Submit</button> -->
+          
+          </form>
+
+          <form action="/cart" method="POST">
+            <button id="submit-list" type="submit" class="button" style="vertical-align:middle"><span>Cart </span></button>
+
+          </form>
+
+
+        </div>
+        </div>
+      </center>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+      <script>
+        updateScroll();
+      function updateScroll(){
+        window.scrollTo(0,document.body.scrollHeight);
+      }
+      </script>
+
+<script src="/static/js/speech-input.js"></script>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </div>
+  </body>
+</html>

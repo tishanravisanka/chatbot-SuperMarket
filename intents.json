@@ -1,0 +1,87 @@
+{
+        "intents": [
+                {
+                        "tag": "greeting",
+                        "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+                        "responses": ["Hello!", "Good to see you!", "Hi there, how can I help?"]
+                },
+                {
+                        "tag": "goodbye",
+                        "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+                        "responses": ["Thank you for comming", "Talk to you later", "Goodbye!", "See you next day"]
+                },
+                {
+                        "tag": "name",
+                        "patterns": ["what is your name", "what should I call you", "whats your name?"],
+                        "responses": ["You can call me Chatter.", "I'm Chatter!"]
+                },
+                {
+                        "tag": "shop",
+                        "patterns": ["Id like to buy some goods", "Could i find some groceries","We want to buy goods","I am going to buy some goods","buy food", "take some food", "select some food"],
+                        "responses": ["What you wants to buy ", "Say your list!","Please tell the list of goods"]
+                },
+                {
+                        "tag": "hours",
+                        "patterns": ["when are you open", "what is your working hours", "hours of operation"],
+                        "responses": ["We are open from 8am to 7pm Monday-Friday!","You can visit us on Monday-Friday 8am to 7pm"]
+                },
+                {
+                        "tag": "payments",
+                        "patterns": ["How can I pay for goods", "Do you accept cards?", "Are you accepting cash only?"],
+                        "responses": ["You can use cards cash for paying", "We are accepting cash or card paments"]
+                },
+
+
+                {
+                        "tag": "Normal goods",
+                        "patterns": ["Biscuits", "Chocolates", "Toffee", "Nuts", "Seeds", "Coffee", "Tea", "Milk powder", "Sugar", "Bread"],
+                        "responses": ["It is in the shelf 1", "You can find it in shelf 1", "Please check it on shelf 1"]
+                },
+                {
+                        "tag": "Beverages",
+                        "patterns": ["beverages","Juice","Soda", "Cola", "Water bottles", "Soft drinks", "Cool drinks", "lemonade"],
+                        "responses": ["It is in the shelf 2", "You can find it in shelf 2", "Please check it on shelf 2"]
+                },
+                {
+                        "tag": "Fruits",
+                        "patterns": ["fruits","Banana", "Apple", "Orange", "Avocados", "Lemon", "Guava", "Grapes", "Pineapple", "Watermelon", "Strawberry"],
+                        "responses": ["It is in the shelf 3", "You can find it in shelf 3", "Please check it on shelf 3"]
+                },
+                {
+                        "tag": "Vegetables",
+                        "patterns": ["vegetables", "Brinjals", "Carrots", "Beetroot", "Leek", "Cucumber", "Green beans", "pumpkin", "potato", "onion"],
+                        "responses": ["It is in the shelf 4", "You can find it in shelf 4", "Please check it on shelf 4"]
+                },
+                {
+                        "tag": "Papers",
+                        "patterns": ["papers","Toilet", "Tissue", "Baby", "Copy paper", "Cards", "Paper"],
+                        "responses": ["It is in the shelf 5", "You can find it in shelf 5", "Please check it on shelf 5"]
+                },
+                {
+                        "tag": "Dairy",
+                        "patterns": ["dairy","Ice-cream", "Butter", "Cheese", "cream cheese", "sour cream", "yogurt", "half"],
+                        "responses": ["It is in the shelf 6", "You can find it in shelf 6", "Please check it on shelf 6"]
+                },
+                {
+                        "tag": "Meat and Fish",
+                        "patterns": ["meat","bacon", "chicken", "fish", "sausage", "turkey"],
+                        "responses": ["It is in the shelf 7", "You can find it in shelf 7", "Please check it on shelf 7"]
+                },
+                {
+                        "tag": "Medicine",
+                        "patterns": ["medicine", "tablets", "herbals"],
+                        "responses": ["It is in the shelf 8", "You can find it in shelf 8", "Please check it on shelf 8"]
+                },
+                {
+                        "tag": "Electronic",
+                        "patterns": ["electronic items","computer", "mobiles", "bulbs", "cameras", "cables"],
+                        "responses": ["It is in the shelf 9", "You can find it in shelf 15", "Please check it on shelf 9"]
+                },
+                {
+                        "tag": "Grains",
+                        "patterns": ["grains","rice ", "dall", "Pasta"],
+                        "responses": ["It is in the shelf 10", "You can find it in shelf 10", "Please check it on shelf 10"]
+                }
+
+        ]
+}
